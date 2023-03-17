@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
+    background-color: #F7F7F7;
+}
+
+body a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.logo a {
+    margin: 15px 0 5px;
+}
+
+.logo img {
+    width: 162px;
+    height: 44px;
+}
+
+.location_reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    height: 50px;
+}
+
+.location {
+    display: flex;
+}
+
+.location p {
+    color: #353535;
+    margin-left: 20px;
+}
+
+.greylocation {
+    color: #353535;
+}
+
+.explore_restaurants {
+    text-align: center;
+}
+
+.explore_restaurants h1 {
+    margin: 40px 50px 0;
+    line-height: 28px;
+}
+
+.explore_restaurants p {
+    margin: 20px 30px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.button_explore {
+    margin: 25px 0 55px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    padding: 13px 20px;
+    border: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.button_explore:hover {
+    background: #fff;
+    color: #9356DC;
+    cursor: pointer;  
+}
+
+.functionning {
+    background-color: #ffff;
+    padding: 50px 20px 0;
+}
+
+.cards_function {
+    margin-top: 25px;
+}
+
+.circle{
+    padding:5px;
+    width:24px;
+    background:#9356DC;
+    height:24px;
+    text-align:center;
+    border-radius:24px;
+    color: #fff;
+    font-size: 15px;
+}
