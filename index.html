@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="logo">
         <a href="index.html"> <img src="assets/images/logo/ohmyfood@2x.svg" alt=""></a>
     </header>
 
     <main>
-        <section class="reservation">
+    <!-- réservation -->
+        <section>
             <div class="location_reservation">
                 <div class="location">
                     <i class="fa-sharp fa-solid fa-location-dot greylocation"></i>
@@ -29,9 +31,10 @@
             <div class="explore_restaurants">
                 <h1 class="title_reservation">Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button class="button_explore" onclick="window.location.href = '#';">Explorer nos restaurants</button>
+                <button class="button_explore" onclick="window.location.href = '#restaurants_cards';">Explorer nos restaurants</button>
             </div>
         </section>
+    <!-- fonctionnement -->
         <section class="functionning">
             <h2>Fonctionnements</h2>
                 <div class="main_function">
@@ -56,16 +59,43 @@
                             <p class="text_function">Déguster au restaurant</p>
                         </a>
                     </div>
-
-
-
-
-
-
-
                 </div>
         </section>
+    <!-- Restaurants -->
+        <section id="restaurants_cards"> 
+            <h2 class="title_section_restaurants">Restaurants</h2>
+            <div class="section_small_cards">
+                <a href="#" class="card">
+                    <div class="new">
+                        <span class="new_text">Nouveau</span>
+                    </div>
+                    <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="entrée saumon fumé salade verte et soja">
+                    <div class="container_restaurant">
+                        <div class>
+                            <h3>La palette du goût</h3>
+                            <p class="text_restaurant">Ménilmontant</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                        </div>
+                    </div>
+                </a>
 
+                <a href="#" class="card">
+                    <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="entrée saumon fumé salade verte et soja">
+                    <div class="container_restaurant">
+                        <div class>
+                            <h3>La palette du goût</h3>
+                            <p class="text_restaurant">Ménilmontant</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                        </div>
+                    </div>
+                </a>
+            
+            </div>
+        </section>
        
     </main>
     
