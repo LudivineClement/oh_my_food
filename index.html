@@ -23,10 +23,10 @@
     <!-- réservation -->
         <section>
             <div class="location_reservation">
-                <div class="location">
-                    <i class="fa-sharp fa-solid fa-location-dot greylocation"></i>
-                    <p class="city_location"> Paris, Belleville</p>
-                </div>
+                <form class="location">
+                        <i class="fa-sharp fa-solid fa-location-dot greylocation"></i>
+                        <input type="search" id="city_location" name="city_search" value="Paris, Belleville" placeholder="Paris, Belleville">   
+                </form>
             </div>
             <div class="explore_restaurants">
                 <h1 class="title_reservation">Réservez le menu qui vous convient</h1>
@@ -65,7 +65,7 @@
         <section id="restaurants_cards"> 
             <h2 class="title_section_restaurants">Restaurants</h2>
             <div class="section_small_cards">
-                <a href="#" class="card">
+                <a href="restaurants/menu_la_palette_du_gout.html" class="card">
                     <div class="new">
                         <span class="new_text">Nouveau</span>
                     </div>
@@ -75,9 +75,7 @@
                             <h3>La palette du goût</h3>
                             <p class="text_restaurant">Ménilmontant</p>
                         </div>
-                        <div class="heart">
                             <i class="fa-regular fa-heart fa-lg"></i>
-                        </div>
                     </div>
                 </a>
 
@@ -91,9 +89,7 @@
                             <h3>La note enchantée</h3>
                             <p class="text_restaurant">Charonne</p>
                         </div>
-                        <div class="heart">
                             <i class="fa-regular fa-heart fa-lg"></i>
-                        </div>
                     </div>
                 </a>
 
@@ -104,9 +100,12 @@
                             <h3>À la française</h3>
                             <p class="text_restaurant">Cité Rouge</p>
                         </div>
-                        <div class="heart">
-                            <i class="fa-regular fa-heart fa-lg"></i>
+                        <div>
+                            <i class="fa-regular fa-heart fa-lg heart_light"></i>
+                            <i class="fa-solid fa-heart fa-lg heart_solid"></i>
                         </div>
+                            
+
                     </div>
                 </a>
 
@@ -117,9 +116,7 @@
                             <h3>Le délice des sens</h3>
                             <p class="text_restaurant">Folie-Méricourt</p>
                         </div>
-                        <div class="heart">
                             <i class="fa-regular fa-heart fa-lg"></i>
-                        </div>
                     </div>
                 </a>
             </div>
@@ -148,11 +145,9 @@
         </div>
 
         <div class="footer_column">
-            <a href="#">Contact</a>
+            <a href="mailto:@ohmyfood@contact.com">Contact</a>
         </div>
 
-    </footer>
-
-    
+    </footer>    
 </body>
 </html>

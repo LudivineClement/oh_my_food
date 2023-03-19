@@ -92,19 +92,40 @@ p {
 
 .location_reservation {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
     height: 50px;
+    margin-top: 3px;
 }
 
 .location {
-    display: flex;
+    margin: 0 auto;
+    padding-left: 60px;
+
 }
 
-.location p {
+#city_location {
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+    padding-left: 10px;
+    height: 30px;
     color: #353535;
-    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+#city_location::placeholder {
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+#city_location:focus::placeholder {
+    color: transparent;
 }
 
 .greylocation {
@@ -138,6 +159,7 @@ p {
 }
 
 .button_explore:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
     opacity: 0.7;
     cursor: pointer; 
 }
@@ -268,8 +290,15 @@ p {
     font-weight: 300;
 }
 
-.fa-heart:hover {
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+.heart_light {
+    margin-right: -24px;
+}
+
+.heart_solid {
+    background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 /*footer*/
