@@ -171,8 +171,7 @@ header {
 
 .container_restaurant {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 12px 18px 12px 10px;
 }
 
@@ -181,15 +180,28 @@ header {
 }
 
 .text_restaurant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
     margin-top: 12px;
     font-size: 15px;
     font-weight: 300;
 }
 
 .price {
+    margin-top: 12px;
     font-size: 15px;
     font-weight: 700;
     color: #353535;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .button_command {
