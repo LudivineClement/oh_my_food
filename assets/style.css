@@ -133,8 +133,10 @@ p {
     color: #353535;
 }
 
-.greylocation {
+.location .fa-location-dot {
     color: #353535;
+    transition: none;
+    opacity: 1;
 }
 
 .explore_restaurants {
@@ -206,8 +208,10 @@ p {
     z-index: 2;
 }
 
-.greyfunction {
+.container_function .fa-mobile-screen-button, .container_function .fa-bars, .container_function .fa-store {
     color: #7E7E7E;
+    transition: none;
+    opacity: 1;
 }
 
 .container_function {
@@ -228,6 +232,8 @@ p {
 
 .container_function:hover .fa-solid {
     color: #9356DC;
+    transition: none;
+    opacity: 1;
 }
 
 .text_function {
@@ -331,8 +337,6 @@ i.fa-solid:hover{
     opacity: 1;
 }
 
-
-
 /*footer*/
 
 .footer {
@@ -341,7 +345,7 @@ i.fa-solid:hover{
     color: #fff;
 }
 
-i.fa-utensils, i.fa-handshake-angle{
+i.fa-utensils, i.fa-handshake-angle {
     color: #fff;
     transition: none;
     opacity: 1;
