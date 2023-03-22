@@ -128,6 +128,11 @@ p {
     color: transparent;
 }
 
+#city_location:focus {
+    border-radius: 20px;
+    color: #353535;
+}
+
 .greylocation {
     color: #353535;
 }
@@ -156,12 +161,17 @@ p {
     border: none;
     font-weight: 500;
     color: #fff;
+    transform: scale(1);
+    transition: all 0.3s ease-in 0.1s;
 }
 
 .button_explore:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
     opacity: 0.7;
-    cursor: pointer; 
+    cursor: pointer;
+    /*background: #FFFFFF;
+    color: #9356DC;*/
+    transform: scale(1.1);
 }
 
 /*fonctionnement*/
@@ -175,6 +185,12 @@ p {
     display: flex;
     align-items: center;
     margin-top: 25px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out 0.1s;
+}
+
+.cards_function:hover {
+    transform: scale(1.05);
 }
 
 .circle{
@@ -234,27 +250,6 @@ p {
     gap: 25px;
 }
 
-.new {
-    grid-area: 1 / 2 / 1 / 3;
-    z-index: 1;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-    margin-right: 15px;
-}
-
-.new_text {
-    width: 80px;
-    height: 30px;
-    background-color: #99E2D0;
-    color: #008766;
-    font-size: 14px;
-    text-align: center;
-    padding: 8px 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 2px;   
-}
-
 .card {
     display: grid;
     grid-template: 70% 30% / 75% 25%;
@@ -278,6 +273,27 @@ p {
     object-fit: cover;
 }
 
+.new {
+    grid-area: 1 / 2 / 1 / 3;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.new_text {
+    width: 80px;
+    height: 30px;
+    background-color: #99E2D0;
+    color: #008766;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;   
+}
+
 .container_restaurant {
     padding: 16px 25px 16px 12px;
 }
@@ -288,23 +304,33 @@ p {
     font-weight: 300;
 }
 
-i.icon_heart {
-    display: inline-flex;
+.icons {
+    display:flex;
     justify-content: flex-end;
-    margin-top: 33px;
-    margin-right: 25px;
+    align-items: center;
+    padding-right: 25px;
 }
 
-i.icon_heart:hover {
-    color: #9356DC;
+i.fa-regular {
+    line-height: 1;
+    margin-right: -24px;
 }
 
-/*i.icon_heart:hover {
+i.fa-solid {
+    color: transparent;
+    line-height: 1;
+    display: inline-block;
+}
+
+i.fa-solid:hover{
     background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-}*/
+    z-index: 1;
+}
+
+
 
 /*footer*/
 
