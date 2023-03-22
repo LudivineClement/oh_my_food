@@ -319,7 +319,6 @@ i.fa-regular {
 i.fa-solid {
     color: transparent;
     line-height: 1;
-    display: inline-block;
     transition: opacity 0.5s ease-in;
     opacity: 0.5;
 }
@@ -340,6 +339,12 @@ i.fa-solid:hover{
     background: #353535;
     padding: 22px 25px 35px;
     color: #fff;
+}
+
+i.fa-utensils, i.fa-handshake-angle{
+    color: #fff;
+    transition: none;
+    opacity: 1;
 }
 
 .title_footer {
