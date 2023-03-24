@@ -100,31 +100,31 @@ p {
     opacity: 0.5;
 }
 
-span:nth-child(1) {
+.welcome span:nth-child(1) {
     animation-delay: 0.1s;
     color: #9356DC;
     opacity: 0.5;
 }
 
-span:nth-child(2) {
+.welcome span:nth-child(2) {
     animation-delay: 0.2s;
     color:#fff;
     opacity: 0.5;
 }
 
-span:nth-child(3) {
+.welcome span:nth-child(3) {
     animation-delay: 0.3s;
     color: #9356DC;
     opacity: 0.5;
 }
 
-span:nth-child(4) {
+.welcome span:nth-child(4) {
     animation-delay: 0.4s;
     color: #fff;
     opacity: 0.5;
 }
 
-span:nth-child(5) {
+.welcome span:nth-child(5) {
     animation-delay: 0.5s;
     color: #9356DC;
     opacity: 0.5;
