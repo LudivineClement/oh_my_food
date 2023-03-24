@@ -133,7 +133,7 @@ p {
 .title_loader {
     color: #9356DC;
     font-family: 'Shrikhand', cursive;
-    font-size: 50px;
+    font-size: 25px;
     margin-top: 20px;
 }
 
@@ -142,7 +142,7 @@ p {
         opacity: 1;
     }
 
-    70% {
+    80% {
         opacity: 0.5;
     }
 
