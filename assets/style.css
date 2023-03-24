@@ -225,6 +225,7 @@ p {
 .container_function:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     background-color: #F5EDFF;
+    cursor: pointer;
 }
 
 .container_function:hover .fa-solid {
