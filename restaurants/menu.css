@@ -169,7 +169,7 @@ i.fa-solid:hover {
 .restaurants_cards {
     margin: 40px 13px;
     animation: transition 1.5s ease-out 0.5s forwards;
-    opacity: 0;   
+    opacity: 0; 
 }
 
 .transition2 {
@@ -180,6 +180,24 @@ i.fa-solid:hover {
 .transition3 {
     animation: transition 1.5s ease-out 2.5s forwards;
     opacity: 0;
+}
+
+/* keyframes*/
+
+@keyframes transition {
+    0% { 
+    opacity: 0;
+    margin-left: -20px;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% { 
+     opacity: 1;
+     margin-left: 13px;
+    }
 }
 
 .title_section_restaurants {
@@ -202,9 +220,8 @@ i.fa-solid:hover {
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 12px;  
 }
-
 
 .card:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
@@ -303,19 +320,4 @@ i.fa-utensils, i.fa-handshake-angle {
     margin-left: 5px ;
 }
 
-/* keyframes*/
-
-@keyframes transition {
-    0% { 
-    opacity: 0;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% { 
-     opacity: 1;
-    }
-}
 
