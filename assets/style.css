@@ -213,7 +213,6 @@ p {
 #city_location:focus {
     border-radius: 20px;
     color: #353535;
-    width: 150px;
 }
 
 .location .fa-location-dot {

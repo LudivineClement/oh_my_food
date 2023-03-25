@@ -257,6 +257,25 @@ i.fa-solid:hover {
     color: #353535;
 }
 
+.check {
+    width: 60px;
+    background-color: #99E2D0;
+    height: 69px;
+    border-radius: 0px 15px 15px 0px;
+    display:flex;
+    align-items: center; 
+    font-size: 21px;
+    padding-left: 20px;
+}
+
+i.fa-circle-check {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    color: #99E2D0;
+}
+
 .ellipsis {
     text-overflow: ellipsis;
     white-space: nowrap;
