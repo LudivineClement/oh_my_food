@@ -168,7 +168,8 @@ i.fa-solid:hover {
 .restaurants_cards {
     margin: 40px 13px;
     animation: transition 1.5s ease-out 0.5s forwards;
-    opacity: 0; 
+    opacity: 0;
+    position: relative; 
 }
 
 .transition2 {
@@ -219,19 +220,28 @@ i.fa-solid:hover {
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    margin-bottom: 12px;  
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;   
 }
 
 .card:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     filter: brightness(1.1);
+    width: calc(100% - 60px);
+    transition: width 1s ease-in;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
+
 
 .container_restaurant {
     display: flex;
     flex-direction: column;
     padding: 12px 18px 12px 10px;
+    width: 100%;
 }
 
 .container_restaurant h3 {
@@ -241,7 +251,7 @@ i.fa-solid:hover {
 .text_restaurant {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .text{
@@ -255,6 +265,7 @@ i.fa-solid:hover {
     font-size: 15px;
     font-weight: 700;
     color: #353535;
+
 }
 
 .check {
@@ -264,16 +275,32 @@ i.fa-solid:hover {
     border-radius: 0px 15px 15px 0px;
     display:flex;
     align-items: center; 
-    font-size: 21px;
-    padding-left: 20px;
+    font-size: 31px;
+    padding-left: 15px;
+    position: absolute;
+    z-index: -1;
+   left: 100%;
+    margin-left: -60px;
+
+}
+
+.check:hover {
+    z-index: 1;
+    cursor: pointer;
+
 }
 
 i.fa-circle-check {
     background-color: #fff;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 20px;
     color: #99E2D0;
+}
+
+i.fa-circle-check:hover{
+    transform: rotate(360deg);
+    transition: 0.3s ease-out;   
 }
 
 .ellipsis {
