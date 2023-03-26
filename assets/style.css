@@ -415,7 +415,7 @@ i.fa-solid:hover{
     background-clip: text;
     -webkit-background-clip: text;
     z-index: 1;
-    opacity: 1;
+    opacity: 1;   
 }
 
 /*footer*/
