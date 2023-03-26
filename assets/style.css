@@ -455,7 +455,7 @@ i.fa-utensils, i.fa-handshake-angle {
     margin-left: 5px ;
 }
 
-/*Media Queries*/ 
+/*Media Queries Tablette*/ 
 
 @media screen and (min-width:768px) and (max-width: 1024px) {
 
@@ -508,26 +508,25 @@ i.fa-utensils, i.fa-handshake-angle {
 
     .footer {
         display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        
-    }
-
-    .footer_column {
-        display: flex;
-        align-items: center;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
     }
 
     .group_footer {
         display: flex;
-        gap: 30px;
+        align-items: center;
+        gap: 45px;
     }
 
-    .icon_footer {
-        margin-left: 70px;
+    .link_footer {
+        margin-left: 5px;
     }
     
+    .link_footer2 {
+        margin-left: 3px ;
+    }
+
 }
 
 
