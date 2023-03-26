@@ -273,7 +273,7 @@ p {
     transform: scale(1.05);
 }
 
-.circle{
+.circle {
     padding:5px;
     width:24px;
     background:#9356DC;
@@ -548,7 +548,7 @@ i.fa-utensils, i.fa-handshake-angle {
         display: flex;
         align-items: center;
         gap: 37px;
-     }
+    }
 
      .container_function {
         padding: 25px 20px 25px 25px;
@@ -559,8 +559,7 @@ i.fa-utensils, i.fa-handshake-angle {
     }
 
     #restaurants_cards {
-        margin: 0;
-        padding: 45px 0px 80px 170px;
+        margin: 45px 0px 80px 170px;
     }
 
     .card img {
@@ -608,14 +607,6 @@ i.fa-utensils, i.fa-handshake-angle {
     }
 }
 
-
-    
-        
-    
-    
-    
-
-}
 
 
 
