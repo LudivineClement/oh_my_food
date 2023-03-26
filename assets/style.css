@@ -438,10 +438,6 @@ i.fa-utensils, i.fa-handshake-angle {
     font-weight: 400;
 }
 
-.footer a:hover {
-    text-decoration: underline;
-}
-
 .footer_column {
     margin-top: 10px;
 }
@@ -541,7 +537,7 @@ i.fa-utensils, i.fa-handshake-angle {
     
     .functionning {
         padding: 50px 190px 60px;
-        }
+    }
     
     .cards_function {
         width: 100%;
@@ -563,16 +559,21 @@ i.fa-utensils, i.fa-handshake-angle {
     }
 
     #restaurants_cards {
-        margin: 45px 0px 80px 170px;
-        overflow: scroll;
+        margin: 0;
+        padding: 45px 0px 80px 170px;
+    }
+
+    .card img {
+        width: 335px;
     }
 
     .section_small_cards {
         display: flex;
         flex-direction: row;
-        gap: 35px;
         padding-bottom: 20px;
         padding-left: 20px;
+        overflow-x: scroll;
+        gap: 40px;
     }
 
     .title_section_restaurants {
