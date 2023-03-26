@@ -308,7 +308,6 @@ p {
 .container_function:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     background-color: #F5EDFF;
-    cursor: pointer;
 }
 
 .container_function:hover .fa-solid {
@@ -457,7 +456,7 @@ i.fa-utensils, i.fa-handshake-angle {
 
 /*Media Queries Tablette*/ 
 
-@media screen and (min-width:768px) and (max-width: 1024px) {
+@media screen and (min-width:768px) and (max-width: 1199px) {
 
     .logo img {
         width: 200px;
@@ -526,8 +525,99 @@ i.fa-utensils, i.fa-handshake-angle {
     .link_footer2 {
         margin-left: 3px ;
     }
+}
+
+/*Media Queries desktop*/
+@media screen and (min-width:1200px) {
+
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
+    
+    .explore_restaurants h1 {
+        font-size: 40px;
+    }
+    
+    .functionning {
+        padding: 50px 190px 60px;
+        }
+    
+    .cards_function {
+        width: 100%;
+        margin-top: 28px;
+    }
+        
+    .main_function {
+        display: flex;
+        align-items: center;
+        gap: 37px;
+     }
+
+     .container_function {
+        padding: 25px 20px 25px 25px;
+    }
+    
+    .text_function {
+        padding-left: 20px;
+    }
+
+    #restaurants_cards {
+        margin: 45px 0px 80px 170px;
+        overflow: scroll;
+    }
+
+    .section_small_cards {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .title_section_restaurants {
+        padding-left: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-right: 150px;
+    }
+
+    .icon_footer {
+        display: flex;
+        margin-top: 8px;
+        padding-left: 70px;
+    }
+
+    .group_footer {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .link_footer {
+        margin-left: 5px;
+    }
+    
+    .link_footer2 {
+        margin-left: 3px ;
+    }
+}
+
+
+    
+        
+    
+    
+    
 
 }
+
+
+
 
 
 
