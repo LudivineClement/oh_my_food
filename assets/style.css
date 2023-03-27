@@ -258,7 +258,7 @@ p {
 
 .functionning {
     background-color: #ffff;
-    padding: 50px 20px 70px;
+    padding: 50px 25px 70px 20px;
 }
 
 .cards_function {
@@ -538,7 +538,7 @@ i.fa-utensils, i.fa-handshake-angle {
     }
     
     .functionning {
-        padding: 50px 140px 60px;
+        padding: 50px 140px 80px;
     }
     
     .cards_function {
