@@ -349,6 +349,8 @@ p {
 .card:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     filter: brightness(1.1);
+   
+
 }
 
 .card img {
@@ -452,7 +454,7 @@ i.fa-utensils, i.fa-handshake-angle {
 
 /*Media Queries Tablette*/ 
 
-@media screen and (min-width:768px) and (max-width: 1199px) {
+@media screen and (min-width:768px) and (max-width: 1023px) {
 
     .logo img {
         width: 200px;
@@ -524,7 +526,7 @@ i.fa-utensils, i.fa-handshake-angle {
 }
 
 /*Media Queries desktop*/
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1024px) {
 
     .logo img {
         width: 200px;
@@ -536,7 +538,7 @@ i.fa-utensils, i.fa-handshake-angle {
     }
     
     .functionning {
-        padding: 50px 190px 60px;
+        padding: 50px 140px 60px;
     }
     
     .cards_function {
@@ -551,7 +553,7 @@ i.fa-utensils, i.fa-handshake-angle {
     }
 
      .container_function {
-        padding: 25px 20px 25px 25px;
+        padding: 25px 10px 25px 25px;
     }
     
     .text_function {
@@ -559,7 +561,7 @@ i.fa-utensils, i.fa-handshake-angle {
     }
 
     #restaurants_cards {
-        margin: 45px 0px 80px 170px;
+        margin: 45px 0px 80px 130px;
     }
 
     .card img {
@@ -583,7 +585,7 @@ i.fa-utensils, i.fa-handshake-angle {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        padding-right: 150px;
+        padding-right: 130px;
     }
 
     .icon_footer {
