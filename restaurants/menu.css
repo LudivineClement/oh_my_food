@@ -165,15 +165,13 @@ i.fa-solid {
 }
 
 i.fa-solid:hover {
-    background:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     background-clip: text;
     -webkit-background-clip: text;
     z-index: 1;
     opacity: 1;
     cursor: pointer;
     filter: brightness(1.1);
-    transition: all 1s ease-in 0.3s;
-
 }
 
 /*cards menu*/
