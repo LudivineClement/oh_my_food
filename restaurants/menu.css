@@ -111,7 +111,7 @@ main {
     background-color: #FFFF;
 }
 
-.main {
+.main_menu {
     background-color: #F7F7F7;
     padding-bottom: 40px;
 }
@@ -178,7 +178,6 @@ i.fa-solid:hover {
     margin: 40px 13px;
     animation: transition 1.5s ease-out 0.5s forwards;
     opacity: 0;
-    position: relative; 
 }
 
 .transition2 {
@@ -232,23 +231,28 @@ i.fa-solid:hover {
     margin-bottom: 12px;
     display: flex;
     justify-content: space-between;
-    position: relative;   
+    overflow: hidden;  
 }
 
 .card:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-    filter: brightness(1.1);
-    width: calc(100% - 60px);
-    transition: width 1s ease-in;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
+.card1 {
+    display: flex;
+    overflow: hidden;
+}
+
+.card1 .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 .container_restaurant {
-    display: flex;
-    flex-direction: column;
     padding: 12px 18px 12px 10px;
     width: 100%;
 }
@@ -257,24 +261,31 @@ i.fa-solid:hover {
     font-weight: 500;
 }
 
-.text_restaurant {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.text{
+.text {
     margin-top: 12px;
     font-size: 15px;
     font-weight: 300;
 }
 
+.card2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card:hover .card2 {
+    transform: translateX(-60px);
+    transition: transform 0.8s ease-in; 
+}
+
 .price {
-    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 12px;
     font-size: 15px;
     font-weight: 700;
     color: #353535;
-
 }
 
 .check {
@@ -283,19 +294,9 @@ i.fa-solid:hover {
     height: 69px;
     border-radius: 0px 15px 15px 0px;
     display:flex;
-    align-items: center; 
+    align-items: center;
     font-size: 31px;
     padding-left: 15px;
-    position: absolute;
-    z-index: -1;
-   left: 100%;
-    margin-left: -60px;
-
-}
-
-.check:hover {
-    z-index: 1;
-    cursor: pointer;
 }
 
 i.fa-circle-check {
@@ -306,15 +307,26 @@ i.fa-circle-check {
     color: #99E2D0;
 }
 
-i.fa-circle-check:hover{
-    transform: rotate(360deg);
-    transition: 0.3s ease-out;   
+.card .check{
+    margin-right: -60px;
 }
 
-.ellipsis {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+.card:hover .fa-circle-check {
+    animation: flip 0.4s ease-in-out 0.8s;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(0);
+    }
 }
 
 .button_command {
@@ -377,7 +389,7 @@ i.fa-utensils, i.fa-handshake-angle {
         height: auto;
     }
 
-    .main {
+    .main_menu {
         margin: 0 110px;
     }
 
@@ -394,23 +406,23 @@ i.fa-utensils, i.fa-handshake-angle {
 
      /* keyframes*/
 
-@keyframes transition {
-    0% { 
-        opacity: 0;
-        margin-left: -40px;
-        margin-right: -40px;
-    }
+    @keyframes transition {
+        0% { 
+            opacity: 0;
+            margin-left: -40px;
+            margin-right: -40px;
+        }
 
-    50% {
-        opacity: 0.5;
-    }
+        50% {
+            opacity: 0.5;
+        }
 
-    100% { 
-        opacity: 1;
-        margin-left: 30px;
-        margin-right: 30px;
+        100% { 
+            opacity: 1;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
     }
-}
 
     .footer {
         display: flex;
@@ -443,7 +455,7 @@ i.fa-utensils, i.fa-handshake-angle {
         height: auto;
     }
 
-    .main {
+    .main_menu {
         margin: 0 140px;
     }
     
@@ -468,23 +480,24 @@ i.fa-utensils, i.fa-handshake-angle {
 
     /* keyframes*/
 
-@keyframes transition {
-    0% { 
-        opacity: 0;
-        margin-left: -100px;
-        margin-right: -100px;
+    @keyframes transition {
+        0% { 
+            opacity: 0;
+            margin-left: -100px;
+            margin-right: -100px;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% { 
+            opacity: 1;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
     }
 
-    50% {
-        opacity: 0.5;
-    }
-
-    100% { 
-        opacity: 1;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-}
     .footer {
         display: flex;
         flex-direction: row-reverse;
@@ -510,8 +523,7 @@ i.fa-utensils, i.fa-handshake-angle {
     
     .link_footer2 {
         margin-left: 3px ;
-    }
-    
+    }    
 }
 
 
