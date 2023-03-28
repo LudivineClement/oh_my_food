@@ -231,7 +231,8 @@ i.fa-solid:hover {
     margin-bottom: 12px;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;  
+    gap: 55px;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -244,8 +245,9 @@ i.fa-solid:hover {
 .card1 {
     display: flex;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
 .card1 .ellipsis {
     text-overflow: ellipsis;
     white-space: nowrap;
