@@ -150,26 +150,30 @@ main {
     font-size: 28px;
     font-weight: 400;
 }
+
 i.fa-regular {
     line-height: 1;
     margin-right: -28px;
 }
 
+
 i.fa-solid {
     color: transparent;
     line-height: 1;
-    transition: all 1s ease-in;
     opacity: 0;
+    transition: all 1s ease-in 0.3s;
 }
 
 i.fa-solid:hover {
-    background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     background-clip: text;
     -webkit-background-clip: text;
     z-index: 1;
     opacity: 1;
     cursor: pointer;
     filter: brightness(1.1);
+    transition: all 1s ease-in 0.3s;
+
 }
 
 /*cards menu*/
@@ -245,9 +249,9 @@ i.fa-solid:hover {
 .card1 {
     display: flex;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+
 }
+
 .card1 .ellipsis {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -275,10 +279,15 @@ i.fa-solid:hover {
     gap: 10px;
 }
 
+.card .card2 {
+    transition: all 0.8s ease-in;
+}
+
 .card:hover .card2 {
     transform: translateX(-60px);
     transition: transform 0.8s ease-in; 
 }
+
 
 .price {
     display: flex;
@@ -342,7 +351,7 @@ i.fa-circle-check {
     color: #fff;
     margin: 0 auto;
     margin-top: 40px;
-    transition: all 0.3s ease-out 0.2s;
+    transition: all 0.3s ease-in-out 0.3s;
 }
 
 .button_command:hover {
