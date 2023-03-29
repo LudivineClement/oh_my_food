@@ -168,7 +168,6 @@ i.fa-solid {
 i.fa-solid:hover {    
     opacity: 1;
     cursor: pointer;
-    filter: brightness(1.1);
     transition: all 0.8s ease-in 0.3s;
 }
 
@@ -354,7 +353,6 @@ i.fa-circle-check {
     cursor: pointer;
     filter: brightness(1.2);
     transition: all 0.3s ease-in-out 0.3s;
-
 }
 
 /*footer*/
@@ -395,6 +393,10 @@ i.fa-utensils, i.fa-handshake-angle {
     .header_logo img {
         width: 200px;
         height: auto;
+    }
+
+    .arrow {
+        left: 40px;
     }
 
     .main_menu {
@@ -460,6 +462,10 @@ i.fa-utensils, i.fa-handshake-angle {
     .header_logo img {
         width: 200px;
         height: auto;
+    }
+
+    .arrow {
+        left: 60px;
     }
 
     .main_menu {
