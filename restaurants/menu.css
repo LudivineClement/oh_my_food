@@ -107,7 +107,7 @@ header {
 
 /*main*/
 
-main {
+.main {
     background-color: #FFFF;
 }
 
@@ -123,7 +123,7 @@ main {
     z-index: 0;
 }
 
-.menu {
+.header_menu {
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     margin-top: -50px;
@@ -154,7 +154,9 @@ main {
 i.fa-regular {
     line-height: 1;
     margin-right: -28px;
+    transition: all 1s ease-in 0.3s;
 }
+
 
 i.fa-solid {
     background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -468,7 +470,7 @@ i.fa-utensils, i.fa-handshake-angle {
         margin: 0 140px;
     }
     
-    .menu {
+    .header_menu {
         margin-top: -70px
     }
 
