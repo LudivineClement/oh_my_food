@@ -238,15 +238,18 @@ p {
     border: none;
     font-weight: 500;
     color: #fff;
-    transition: all 0.3s ease-out 0.2s;
 }
 
 .button_explore:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
     cursor: pointer;
-    filter: brightness(1.15);
-    transition: all 0.3s ease-out 0.2s;
+    filter: brightness(1.2);
+    transition: all 0.3s ease-in-out 0.3s;
+}
 
+.button_explore:not(:hover) {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0.3s;
 }
 
 /*fonctionnement*/
@@ -281,17 +284,12 @@ p {
     z-index: 2;
 }
 
-.container_function .fa-mobile-screen-button, .container_function .fa-bars, .container_function .fa-store {
-    color: #7E7E7E;
-    transition: none;
-    opacity: 1;
-}
-
 .container_function {
     display: flex;
     align-items: center;
     width: 100%;
     height: 73px;
+    color: #7E7E7E;
     background-color: #F6F6F6;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
@@ -313,6 +311,7 @@ p {
 
 .text_function {
     padding-left: 27px;
+    color: #000;
 }
 
 /*restaurants*/
@@ -393,24 +392,29 @@ p {
     padding-right: 25px;
 }
 
-i.fa-regular {
+i.icon-regular {
     margin-right: -24px;
 }
 
-i.fa-solid {
+i.icon-solid:hover { 
+    background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;     
+    opacity: 1;
+    line-height: 1;  
+    cursor: pointer;
+    transition: opacity 0.8s ease-in 0.3s;
+}
+
+i.icon-solid:not(:hover) {
     background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    line-height: 1;
+    line-height: 1;     
+    transition: opacity 0.8s ease-in 0.3s;
     opacity: 0;
-    transition: all 1s ease-in 0.3s;
-}
-
-i.fa-solid:hover{
-    opacity: 1;
-    cursor: pointer;
-    transition: all 1s ease-in 0.3s;
 }
 
 /*footer*/
@@ -554,24 +558,19 @@ i.fa-utensils, i.fa-handshake-angle {
     }
 
     #restaurants_cards {
-        margin: 45px 0px 80px 130px;
-    }
-
-    .card img {
-        width: 335px;
+        margin: 55px 140px 65px;
     }
 
     .section_small_cards {
         display: flex;
         flex-direction: row;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        overflow-x: scroll;
-        gap: 40px;
+        flex-wrap: wrap;
+        row-gap: 55px;
+        column-gap: 90px;
     }
 
-    .title_section_restaurants {
-        padding-left: 20px;
+    .card {
+        flex: 40%;  
     }
 
     .footer {
