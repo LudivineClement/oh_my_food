@@ -101,8 +101,6 @@ header {
 
 .header_logo .fa-arrow-left {
     color: #000;
-    transition: none;
-    opacity: 1;
 }
 
 /*main*/
@@ -247,7 +245,7 @@ i.icon-solid:not(:hover) {
 }
 
 .card1 {
-    display: flex;
+    display: flex;  
     overflow: hidden;
 }
 
@@ -361,12 +359,6 @@ i.fa-circle-check {
 
 .footer_column {
     margin-top: 10px;
-}
-
-i.fa-utensils, i.fa-handshake-angle {
-    color: #fff;
-    transition: none;
-    opacity: 1;
 }
 
 .link_footer {
